@@ -6,7 +6,7 @@ const Posts = ({ posts }) => {
   const [searchTerm, setSearchTerm] = useState('');
 
   function postMatches(post, text) {
-    const { title, description, price, location} = post;
+    const { title } = post;
     if (!searchTerm) return true;
     return post.title.includes(text)
   }

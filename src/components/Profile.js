@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Profile = ({ user }) => {
@@ -12,7 +12,6 @@ const Profile = ({ user }) => {
         <h1 id="myPostsTitle">Your Posts</h1>
         {
           posts && posts.map(post => {
-
             const { description, location, price, title, willDeliver } = post;
             if(post.active===true) {
               return (
